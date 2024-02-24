@@ -1,0 +1,46 @@
+header,
+.page,
+footer {
+  min-height: 200px;
+  background: grey;
+  display: flex;
+}
+
+.menu {
+    min-height: 200px;
+    display: inline-block;
+    background: blue;
+    width: 30%;
+  }
+
+  .content {
+    min-height: 200px;
+    display: inline-block;
+    background: lightgrey;
+    width: 70%;
+  }
+
+  @media (width <= 600px) {
+
+    .page{
+        display: block;
+    }
+    .content{
+        width: 100%;
+        background: rgb(33, 74, 33);
+    }
+    .menu{
+        width: 100%;
+        background: rgb(77, 77, 39);
+    }
+    
+  }
+
+  @media (601px <= width <= 1199px) {
+    .menu {
+      background: rgb(0, 204, 255);
+    }
+    .content{
+        background: rgb(255, 252, 192);
+    }
+  }
